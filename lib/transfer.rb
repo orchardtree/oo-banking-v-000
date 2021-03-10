@@ -1,3 +1,4 @@
+require 'pry'
 class Transfer
   # your code here
   attr_accessor :sender, :receiver, :status, :amount
@@ -14,7 +15,7 @@ class Transfer
   end
   
   def execute_transaction
-    @sender.balance -= @amount
-    @recipient.balance += @amount
+    #@sender.balance -= @amount
+    #@recipient.balance += @amount
   end
 end
