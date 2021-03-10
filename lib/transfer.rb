@@ -10,6 +10,6 @@ class Transfer
   end
   
   def valid? 
-    true
+    @status == "open" && @balance > 0
   end
 end
